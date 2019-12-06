@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.passField = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginField = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(3)))), ((int)(((byte)(13)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonLogin);
             this.panel1.Controls.Add(this.passField);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.loginField);
@@ -60,22 +60,23 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
-            // button1
+            // buttonLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(108)))), ((int)(((byte)(9)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(50)))), ((int)(((byte)(3)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(182)))), ((int)(((byte)(8)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(136, 373);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 47);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(108)))), ((int)(((byte)(9)))));
+            this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(50)))), ((int)(((byte)(3)))));
+            this.buttonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(182)))), ((int)(((byte)(8)))));
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.White;
+            this.buttonLogin.Location = new System.Drawing.Point(136, 373);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(178, 47);
+            this.buttonLogin.TabIndex = 6;
+            this.buttonLogin.Text = "Войти";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // passField
             // 
@@ -136,7 +137,7 @@
             this.closeButton.AutoSize = true;
             this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.closeButton.ForeColor = System.Drawing.Color.White;
+            this.closeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(254)))), ((int)(((byte)(2)))));
             this.closeButton.Location = new System.Drawing.Point(424, 0);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(36, 36);
@@ -189,6 +190,6 @@
         private System.Windows.Forms.TextBox passField;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox loginField;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLogin;
     }
 }
