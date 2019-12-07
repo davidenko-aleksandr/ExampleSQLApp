@@ -26,7 +26,7 @@ namespace ExampleSQLApp
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         Point lastPoint;
@@ -175,6 +175,23 @@ namespace ExampleSQLApp
                 return false;
             }
             
+        }
+
+        private void loginLabel_MouseEnter(object sender, EventArgs e)
+        {
+            loginField.ForeColor = Color.Yellow;
+        }
+
+        private void loginLabel_MouseLeave(object sender, EventArgs e)
+        {
+            loginField.ForeColor = Color.White;
+        }
+
+        private void loginLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
     }
 }

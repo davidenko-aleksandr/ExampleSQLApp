@@ -38,7 +38,7 @@ namespace ExampleSQLApp
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void closeButton_MouseEnter(object sender, EventArgs e)
@@ -100,9 +100,14 @@ namespace ExampleSQLApp
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
-             
+
             if (table.Rows.Count > 0)
-                MessageBox.Show("YES");
+            {
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
+
+            }
+                
             else
                 MessageBox.Show("FAC");
 
@@ -110,6 +115,22 @@ namespace ExampleSQLApp
 
         }
 
+        private void registerLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
+        }
+
+        private void registerLabel_MouseEnter(object sender, EventArgs e)
+        {
+            registerLabel.ForeColor = Color.Yellow;
+        }
+
+        private void registerLabel_MouseLeave(object sender, EventArgs e)
+        {
+            registerLabel.ForeColor = Color.White;
+        }
     }
 }
  

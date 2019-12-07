@@ -39,6 +39,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
+            this.loginLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -83,6 +84,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(3)))), ((int)(((byte)(13)))));
+            this.panel1.Controls.Add(this.loginLabel);
             this.panel1.Controls.Add(this.userSurNameField);
             this.panel1.Controls.Add(this.userNameField);
             this.panel1.Controls.Add(this.buttonRegister);
@@ -130,7 +132,7 @@
             this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonRegister.ForeColor = System.Drawing.Color.White;
-            this.buttonRegister.Location = new System.Drawing.Point(243, 372);
+            this.buttonRegister.Location = new System.Drawing.Point(242, 354);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(354, 47);
             this.buttonRegister.TabIndex = 6;
@@ -182,6 +184,20 @@
             this.closeButton.Text = "X";
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // loginLabel
+            // 
+            this.loginLabel.AutoSize = true;
+            this.loginLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.loginLabel.Location = new System.Drawing.Point(358, 424);
+            this.loginLabel.Name = "loginLabel";
+            this.loginLabel.Size = new System.Drawing.Size(114, 17);
+            this.loginLabel.TabIndex = 9;
+            this.loginLabel.Text = "Авторизоваться";
+            this.loginLabel.Click += new System.EventHandler(this.loginLabel_Click);
+            this.loginLabel.MouseEnter += new System.EventHandler(this.loginLabel_MouseEnter);
+            this.loginLabel.MouseLeave += new System.EventHandler(this.loginLabel_MouseLeave);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -214,5 +230,6 @@
         private System.Windows.Forms.Label closeButton;
         private System.Windows.Forms.TextBox userSurNameField;
         private System.Windows.Forms.TextBox userNameField;
+        private System.Windows.Forms.Label loginLabel;
     }
 }
