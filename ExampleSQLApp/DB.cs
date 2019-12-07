@@ -10,8 +10,8 @@ namespace ExampleSQLApp
     class DB
     {
         MySqlConnection connection = new MySqlConnection("server=localhost;port=8889;username=root;password=root;database=itproget");
-   
-     public void openConnecion()
+
+        public void openConnecion()
         {
             if (connection.State == System.Data.ConnectionState.Closed)
                 connection.Open();

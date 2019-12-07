@@ -91,14 +91,16 @@ namespace ExampleSQLApp
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE 'login' = @uL AND 'pass' = @uP", db.getConnection());
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @uL AND `pass` = @uP", db.getConnection());
+            
 
             command.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginUser;
             command.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passUser;
 
+
             adapter.SelectCommand = command;
             adapter.Fill(table);
-
+             
             if (table.Rows.Count > 0)
                 MessageBox.Show("YES");
             else
