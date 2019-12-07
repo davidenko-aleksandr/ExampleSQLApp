@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.registerLabel = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.passField = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -37,7 +38,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.registerLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +61,20 @@
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // registerLabel
+            // 
+            this.registerLabel.AutoSize = true;
+            this.registerLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.registerLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.registerLabel.Location = new System.Drawing.Point(156, 450);
+            this.registerLabel.Name = "registerLabel";
+            this.registerLabel.Size = new System.Drawing.Size(135, 17);
+            this.registerLabel.TabIndex = 7;
+            this.registerLabel.Text = "Еще нет аккаунта?";
+            this.registerLabel.Click += new System.EventHandler(this.registerLabel_Click);
+            this.registerLabel.MouseEnter += new System.EventHandler(this.registerLabel_MouseEnter);
+            this.registerLabel.MouseLeave += new System.EventHandler(this.registerLabel_MouseLeave);
             // 
             // buttonLogin
             // 
@@ -163,20 +177,6 @@
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.label1_MouseMove);
             // 
-            // registerLabel
-            // 
-            this.registerLabel.AutoSize = true;
-            this.registerLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.registerLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.registerLabel.Location = new System.Drawing.Point(156, 450);
-            this.registerLabel.Name = "registerLabel";
-            this.registerLabel.Size = new System.Drawing.Size(135, 17);
-            this.registerLabel.TabIndex = 7;
-            this.registerLabel.Text = "Еще нет аккаунта?";
-            this.registerLabel.Click += new System.EventHandler(this.registerLabel_Click);
-            this.registerLabel.MouseEnter += new System.EventHandler(this.registerLabel_MouseEnter);
-            this.registerLabel.MouseLeave += new System.EventHandler(this.registerLabel_MouseLeave);
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,6 +185,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

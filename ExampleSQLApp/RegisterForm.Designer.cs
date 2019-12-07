@@ -32,6 +32,7 @@
             this.loginField = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.loginLabel = new System.Windows.Forms.Label();
             this.userSurNameField = new System.Windows.Forms.TextBox();
             this.userNameField = new System.Windows.Forms.TextBox();
             this.buttonRegister = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
-            this.loginLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -99,6 +99,20 @@
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // loginLabel
+            // 
+            this.loginLabel.AutoSize = true;
+            this.loginLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.loginLabel.Location = new System.Drawing.Point(358, 424);
+            this.loginLabel.Name = "loginLabel";
+            this.loginLabel.Size = new System.Drawing.Size(114, 17);
+            this.loginLabel.TabIndex = 9;
+            this.loginLabel.Text = "Авторизоваться";
+            this.loginLabel.Click += new System.EventHandler(this.loginLabel_Click);
+            this.loginLabel.MouseEnter += new System.EventHandler(this.loginLabel_MouseEnter);
+            this.loginLabel.MouseLeave += new System.EventHandler(this.loginLabel_MouseLeave);
             // 
             // userSurNameField
             // 
@@ -184,20 +198,6 @@
             this.closeButton.Text = "X";
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
-            // loginLabel
-            // 
-            this.loginLabel.AutoSize = true;
-            this.loginLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.loginLabel.Location = new System.Drawing.Point(358, 424);
-            this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(114, 17);
-            this.loginLabel.TabIndex = 9;
-            this.loginLabel.Text = "Авторизоваться";
-            this.loginLabel.Click += new System.EventHandler(this.loginLabel_Click);
-            this.loginLabel.MouseEnter += new System.EventHandler(this.loginLabel_MouseEnter);
-            this.loginLabel.MouseLeave += new System.EventHandler(this.loginLabel_MouseLeave);
-            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -206,6 +206,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegisterForm1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
